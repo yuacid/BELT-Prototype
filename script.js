@@ -1,1 +1,1 @@
-function show(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');}
+function go(i){document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));document.getElementById(i).classList.add('active');}
