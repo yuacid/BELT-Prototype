@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BELT Prototype 0.1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="screen active" id="title">
+<h1>BELT</h1>
+<p class="tag">継承されるのは、ベルトではない。</p>
+<button onclick="show('home')">続きから</button>
+<button onclick="show('home')">新しく始める</button>
+<button onclick="alert('設定はPrototype0.2で実装予定')">設定</button>
+<p class="note">※このゲームは自動的に進行状況を記録します。</p>
+</div>
+
+<div class="screen" id="home">
+<header><h2>控室</h2></header>
+<div class="card">
+<h3>現在のレスラー</h3>
+<p><strong>佐藤 勇</strong></p>
+<p>26歳 / US王者</p>
+<p>12勝4敗</p>
+</div>
+<div class="menu">
+<button onclick="alert('試合はPrototype0.2予定')">試合</button>
+<button onclick="show('news')">新聞</button>
+<button onclick="alert('年表はPrototype0.2予定')">年表</button>
+<button onclick="alert('コレクションはPrototype0.2予定')">コレクション</button>
+<button onclick="show('title')">タイトルへ戻る</button>
+</div>
+</div>
+
+<div class="screen" id="news">
+<h2>プロレス新報</h2>
+<article class="paper">
+<h3>佐藤 勇 US王座初防衛！</h3>
+<p>会場は歓声に包まれ、圧倒的な勝利を収めた。</p>
+<hr>
+<h4>Chronicle</h4>
+<p class="ai">「あの程度のラリアットで勝てると思ったのでしょうか。」</p>
+</article>
+<button onclick="show('home')">控室へ戻る</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
